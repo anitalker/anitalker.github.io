@@ -18,15 +18,12 @@
             <h1 class="title is-2 has-text-centered">
                 <strong>AniTalker:</strong> Animate Vivid and Diverse Talking Faces through Identity-Decoupled Facial Motion Encoding
             </h1>
-            <p class="subtitle is-6 has-text-centered">
-                <a href="#" class="has-text-centered">Project Page</a>
+
+            <p class=" is-5 has-text-centered">
+                <a href="https://github.com/anitalker/anitalker" class="has-text-centered">Codes (To be released)</a> - <a href="#" class="has-text-centered">Paper (To be released)</a> 
             </p>
-            <p class="subtitle is-4 has-text-centered">
-                Note that videos in this page are generated content, and the audio does not represent the speaker's opinion.
-            </p>
-            <p class="subtitle is-4 has-text-centered">
-                <br>
-            </p>
+            
+
         </div>
     <section>
 
@@ -36,12 +33,53 @@
             <div class="content has-text-justified-desktop">
                 <img class="mb-5" src="img/generated_result.png">
             </div>
+            <p>
+                <i>" We introduce <b>AniTalker</b>, a framework that transforms a <b>single static portrait</b> and <b>input audio </b> into animated talking videos with naturally flowing movements. Each column of generated results utilizes identical control signals with similar poses and expressions but incorporates some random variations, demonstrating the diversity of our generated outcomes. " </i>
+            </p>
         </div>
     </section>
 
+        <section class="section hero is-light">
+        <div class="container is-max-desktop">
+            <h1 class="title is-4 has-text-centered">
+                Abstract
+            </h1>
+            <div class="content has-text-justified-desktop">
+                
+                <p>
+                    The paper introduces <strong>AniTalker</strong>, an innovative framework designed to generate lifelike talking faces from a single portrait. Unlike existing models that primarily focus on verbal cues such as lip synchronization and fail to capture the complex dynamics of facial expressions and nonverbal cues, AniTalker employs a universal motion representation. This innovative representation effectively captures a wide range of facial dynamics, including subtle expressions and head movements. AniTalker enhances motion depiction through two self-supervised learning strategies: the first involves reconstructing target video frames from source frames within the same identity to learn subtle motion representations, and the second develops an identity encoder using metric learning while actively minimizing mutual information between the identity and motion encoders. This approach ensures that the motion representation is dynamic and devoid of identity-specific details, significantly reducing the need for labeled data. Additionally, the integration of a diffusion model with a variance adapter allows for the generation of diverse and controllable facial animations. This method not only demonstrates AniTalker’s capability to create detailed and realistic facial movements but also underscores its potential in crafting dynamic avatars for real-world applications.
+                </p>
+
+            </div>
+        </div>
+    </section>
+
+
+         <section class="section">
+        <div class="container is-max-desktop">
+             <h1 class="title is-4 has-text-centered">
+                Architecture
+            </h1>
+            <div class="content has-text-justified-desktop">
+                <img class="mb-5" src="img/method_overview.png">
+            </div>
+            <i>"Our framework comprises two main components: learning a universal motion representation and then generating and manipulating this representation through a sequence model. Specifically, the first part aims to learn a robust motion representation by employing metric learning (ML), mutual information disentanglement (MID), and Hierarchical Aggregation Layer (HAL). Subsequently, this motion representation can be used for further generation and manipulation. " </i>
+        </div>
+    </section>
+
+        
         <div class="container">
+
+        <h1 class="title is-4 has-text-centered">
+            Video Demos
+        </h1>
+        <p class=" is-4 has-text-centered">
+                <b>[NOTE] The videos below are generated content, and the audio does not represent the speaker's opinion.</b> 
+            </p>
         <div class="row">
+            
             <div class="col-12 text-center">
+
                 <hr style="margin-top:0px">
                 <p><center><strong><font size="5">Audio-driven Talking Face Generation (Realism)</font></strong></center></p>
                 <p></p>
@@ -183,6 +221,18 @@
 
                 The potential misuse of lifelike digital human face generation, such as for creating fraudulent identities or disseminating misinformation, necessitates preemptive ethical measures. Before utilizing these models, it is crucial for organizations to integrate ethical guidelines into their policies, ensuring the application of this technology emphasizes consent, transparency, and accountability. Furthermore, it is recommended to embed visible or invisible digital watermarks in any generated content.
 
+                </p>
+
+            </div>
+
+            <h1 class="title is-4">
+                Removal Policy
+            </h1>
+            <div class="content has-text-justified-desktop">
+
+                 <p>
+
+               Please be aware that all videos on this page are algorithmically generated from publicly available sources and are intended solely for academic demonstrations and algorithm comparisons.  Any other form of usage is prohibited. If you feel uncomfortable or have any questions, please raise an <b> <a href="https://github.com/anitalker/anitalker.github.io/issues">issue </a> </b>, and we will address your request promptly. Besides, if required by the original image owner or in the case of misuse of the models, the images, models, and codes associated with this project may be removed at any time.
                 </p>
             </div>
         </div>
